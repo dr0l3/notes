@@ -1,0 +1,24 @@
+PLAN
+- use OrientDB because it seems like a nicer database
+
+
+Concepts
+- Article
+    - id
+    - Topic
+    - Content
+- Relation
+
+
+
+Another idea
+ - Lets just have regular files
+ - We can put some meta data somewhere that links to other files
+ - We can then parse that metadata and ETL it into a graph database
+ - We can then use the graph database to keep track of stuff thats needed
+    - Ids and links
+ - This means we can leverage grep for search \o/
+ - And we can store all the data in git for versioning
+ - Shell scripts for simple things like
+    - Create a new article
+- Meta data field
