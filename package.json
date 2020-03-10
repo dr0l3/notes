@@ -1,8 +1,12 @@
 {
   "name": "notes",
-  "version": "1.0.0",
-  "description": "",
   "scripts": {},
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/orientjs": "^3.0.10",
+    "@types/parsimmon": "^1.10.1",
+    "bennu": "^17.3.0",
+    "glob": "^7.1.6",
+    "parsimmon": "^1.13.0"
+  }
 }

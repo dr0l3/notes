@@ -1,13 +1,10 @@
 PLAN
 - use OrientDB because it seems like a nicer database
-
-
-Concepts
-- Article
-    - id
-    - Topic
-    - Content
-- Relation
+- Create sync function
+    - Parse metadata
+    - set up tables
+    - set up data import
+    - Create visualization
 
 
 
@@ -22,3 +19,13 @@ Another idea
  - Shell scripts for simple things like
     - Create a new article
 - Meta data field
+
+
+
+Data format
+- file path
+- content
+- tags
+- topic
+- headings
+
