@@ -1,0 +1,32 @@
+{
+  "config": {
+    "log": "debug"
+  },
+  "source": {
+    "file": {
+      "path": "/orientdb/etl/tags.csv"
+    }
+  },
+  "extractor": {
+    "csv": {}
+  },
+  "transformers": [
+    {
+      "vertex": {
+        "class": "Tag"
+      }
+    }
+  ],
+  "loader": {
+    "orientdb": {
+      "dbURL": "plocal:/orientdb/databases/tags-test",
+      "dbUser": "admin",
+      "dbPassword": "admin",
+      "dbAutoCreate": true,
+      "tx": false,
+      "wal": false,
+      "batchCommit": 1000,
+      "dbType": "graph"
+    }
+  }
+}
