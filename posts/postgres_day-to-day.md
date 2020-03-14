@@ -1,0 +1,26 @@
+---
+id: 44cfaa5f-4c60-4581-8e7d-d5a16e84dcbe
+topic: postgres day-to-day
+tags: database, postgres
+---
+
+
+# start new postgres instance in docker with volume attached
+
+```bash
+docker run -d --name postgres \ 
+    -p 5432:5432 \
+    -v $pwd/some-folder:/var/lib/postgresql/data \
+    -e POSTGRES_PASSWORD=postgres \
+    postgres
+```
+
+# clone a database inside postgres for testing purposes
+
+```sql
+CREATE DATABASE dvdrental_test WITH TEMPLATE dvdrental;
+```
+
+# Visual explain
+
+https://dalibo.github.io/pev2/#/
