@@ -30,6 +30,12 @@ CREATE DATABASE dvdrental_test WITH TEMPLATE dvdrental;
 
 https://dalibo.github.io/pev2/#/
 
+# Invesitgating index creation
+
+[HypoPG](https://hypopg.readthedocs.io/en/latest/index.html) allows you to hypethetically create an index and see if the query parser will use it.
+
+Does not work on RDS.
+
 # Debugging config file usage
 
 `SHOW config_file`
