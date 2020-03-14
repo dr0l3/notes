@@ -7,13 +7,18 @@ tags: database, postgres
 
 # start new postgres instance in docker with volume attached
 
+
 ```bash
 docker run -d --name postgres \ 
     -p 5432:5432 \
+    -v $pwd/postgres.conf:/var/lib/postgresql/data/postgres.conf \
     -v $pwd/some-folder:/var/lib/postgresql/data \
     -e POSTGRES_PASSWORD=postgres \
     postgres
 ```
+
+Use the postgres.conf in the media folder.
+
 
 # clone a database inside postgres for testing purposes
 
@@ -24,3 +29,7 @@ CREATE DATABASE dvdrental_test WITH TEMPLATE dvdrental;
 # Visual explain
 
 https://dalibo.github.io/pev2/#/
+
+# Debugging config file usage
+
+`SHOW config_file`
