@@ -11,8 +11,8 @@ tags: database, postgres
 ```bash
 docker run -d --name postgres \ 
     -p 5432:5432 \
-    -v $pwd/postgres.conf:/var/lib/postgresql/data/postgres.conf \
-    -v $pwd/some-folder:/var/lib/postgresql/data \
+    -v $PWD/postgres.conf:/var/lib/postgresql/data/postgres.conf \
+    -v $PWD/some-folder:/var/lib/postgresql/data \
     -e POSTGRES_PASSWORD=postgres \
     postgres
 ```
