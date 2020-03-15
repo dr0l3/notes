@@ -29,6 +29,8 @@ const data = files.map(file => {
     return output
 })
 
+const posts = [""]
+
 const tags = [...new Set(data.map(d => d.tags).flat())]
 
 console.log(tags)

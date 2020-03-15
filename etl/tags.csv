@@ -1,7 +1,9 @@
-name,count
-networking,1
-linux,1
-fundamentals,1
-wifi,1
-compsci,1
-parsing,1
+name
+networking
+compsci
+linux
+fundamentals
+wifi
+postgres
+database
+parsing

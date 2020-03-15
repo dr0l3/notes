@@ -29,3 +29,10 @@ Data format
 - topic
 - headings
 
+tables
+- tags
+    - tagname
+- posts
+    - tags
+    - headings
+    - topic
