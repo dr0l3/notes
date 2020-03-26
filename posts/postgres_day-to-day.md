@@ -39,3 +39,15 @@ Does not work on RDS.
 # Debugging config file usage
 
 `SHOW config_file`
+
+# List current activity
+
+`SELECT * FROM pg_stat_activity;`
+
+# Kill client
+
+`select pg_terminate_backend(pid)`
+
+# Approximate count
+
+`SELECT n_live_tup FROM pg_stat_all_tables WHERE relname = 'tablename';`
