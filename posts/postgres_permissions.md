@@ -15,7 +15,7 @@ Roles can be granted privileges on objects.
 
 # Changing default permissions
 
-Default permissions only apply for objects owned by the user who executes changes the default permissions.
+Default permissions only apply for objects owned by the user who executes changes in the default permissions.
 This can be counter intuitive, lets take the following example.
 
 1) root creates admin user

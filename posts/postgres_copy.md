@@ -27,3 +27,9 @@ recommended csv delimeter: ;
 recommended quote character: "
 
 Need to escape both of these in the csv file.
+
+# String escape
+
+The easiest way to string escape in postgres is to wrap things in $$ or $my-tag$.
+
+Its neatly described here: https://www.postgresql.org/docs/10/sql-syntax-lexical.html
