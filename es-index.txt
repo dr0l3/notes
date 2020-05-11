@@ -1,0 +1,13 @@
+PUT /posts3
+{
+  "mappings": {
+    "properties": {
+      "headings":    { "type": "text" },  
+      "text":  { "type": "text"  }, 
+      "topic":   { "type": "text"  },
+      "html": {"type": "text"},
+      "filename": {"type": "keyword"},
+      "tags": {"type": "keyword"}
+    }
+  }
+}

@@ -10,29 +10,16 @@ PLAN
 
 Another idea
  - Lets just have regular files
+ - Editing markdown is nice, so lets have it in markdown
  - We can put some meta data somewhere that links to other files
- - We can then parse that metadata and ETL it into a graph database
- - We can then use the graph database to keep track of stuff thats needed
-    - Ids and links
- - This means we can leverage grep for search \o/
- - And we can store all the data in git for versioning
- - Shell scripts for simple things like
-    - Create a new article
-- Meta data field
+ - Let's shove this into ElasticSearch so we can search easily
 
 
 
-Data format
-- file path
-- content
-- tags
-- topic
-- headings
+Problems to be solved
+- Highlighting in code blocks does not work
 
-tables
-- tags
-    - tagname
-- posts
-    - tags
-    - headings
-    - topic
+
+Features to add
+- 
+
