@@ -37,15 +37,16 @@ Nowadays that has mostly been turned on its head. Today GUI's are thought of as 
 
 Does a similar perspective shift apply to all "Object oriented use cases"? And if that is the case will all programming eventually converge to functional programming?
 
-The answer is that the two system are equivalent.
+The answer is that the two systems are equivalent.
 
-Actors an be viewed as collections of functions.
+Actors an be viewed as collections of functions and a function can be viewed as an actor.
 Actors can receive messages and reply with responses.
 So the messages are function parameters and the response is the function return.
 So an actor that can only process a single type of message is in fact just a function.
 
 Actors can keep state, but so can functions.
 Functions just delegate the actual book-keeping of the state to a database.
+That database can be diskbased, but there is nothing stopping it from delegating to an in-memory cache. At that point a function has the same capabilties as an actor.
 
 So whether a system is a collections of functions working together to form a whole or it is a collection of actors is just semantics.
 
