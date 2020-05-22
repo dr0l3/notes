@@ -35,6 +35,7 @@ INSERT INTO users (email, password) VALUES (
 SELECT id 
   FROM users
  WHERE email = 'johndoe@mail.com' 
+ AND password = crypt('johnspassword', password);
 ```
 
 # Security concerns
