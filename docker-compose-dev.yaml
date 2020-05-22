@@ -17,6 +17,19 @@ services:
       - 9200:9200
     networks:
       - elastic
+  kib01:
+    image: docker.elastic.co/kibana/kibana:7.7.0
+    container_name: kib01
+    depends_on: 
+        - es01
+    ports:
+        - 5601:5601
+    environment:
+        ELASTICSEARCH_URL: http://es01:9200
+        ELASTICSEARCH_HOSTS: http://es01:9200
+        XPACK_MONITORING_ENABLED: "false"
+    networks:
+        - elastic
   serve01:
     image: rdp/serve-example
     container_name: serve01

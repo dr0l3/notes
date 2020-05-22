@@ -1,0 +1,1 @@
+curl -XPUT "http://localhost:9200/posts3" -H 'Content-Type: application/json' -d @es-index.txt
