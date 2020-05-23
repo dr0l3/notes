@@ -13,4 +13,6 @@ Does not support union types.
 
 Still being worked on: https://github.com/hasura/graphql-engine/pull/2392
 
-Not quite clear when it will arrive, but one can try it out in the docker images linked in the PR
+Not quite clear when it will arrive, but one can try it out in the docker images linked in the PR.
+
+It was stated that this is scheduled for delivery in 1.3 which should land end of May 2020.
