@@ -15,6 +15,7 @@ const tagRegex = /(?<=tags:\s)(.*)/g
 const topicRegex = /(?<=topic:\s)(.*)/g
 const headingsRegex = new RegExp(/(?<=#)(.*)/gm)
 const textReplacementRegex = /---(\s|.)*?---\s*/
+const idRegex = /(?<=id:\s)(.*)/g
 
 async function main() {
     const files = fs.readdirSync(postsBasePath)
@@ -28,9 +29,11 @@ async function main() {
         const headings = contents.match(headingsRegex)?.map(v => v.replace(/#*/g, "").trim())
         const text = contents.replace(textReplacementRegex, "")
         const html = converter.makeHtml(text)
+        const id = contents.match(idRegex)?.[0]
 
-        const payload = {
+        const payload: RequestParams.Index = {
             index: 'posts3',
+            id: id,
             body: {
                 text: text,
                 filename: fileName,
