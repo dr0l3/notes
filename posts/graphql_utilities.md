@@ -18,3 +18,13 @@ tags: graphql
 # Federate a non-federated schema
 
 - https://github.com/0xR/graphql-transform-federation
+
+# Merge/federate all sorts of things
+
+https://graphql-mesh.com/
+
+Suppports
+- gRPC
+- Rest
+- GraphQL
+- Thrift (somewhat)

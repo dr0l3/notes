@@ -13,4 +13,3 @@ tags: linux
 # Osquery
 
 Sql interface into linux internals
-
