@@ -88,7 +88,7 @@ When you wanted to perform analytics on this data you needed to go through the w
 
 # ELT
 
-Since modern applications dont use main frames, but regular SQL database.
+Modern applications dont use main frames, but regular SQL database.
 We still have a need to perform analytics and we still dont really want to do that against the OLTP database.
 However it is perfectly possible to just copy the data from the OLTP database to the OLAP database one-to-one (they could both be postgres databases). We can then perform whatever transformations are needed in the OLAP database itself.
 
