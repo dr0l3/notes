@@ -81,3 +81,6 @@ This can be inverted with the ? operator like this
 /(.*?at)/ => <b>The fat</b> cat sat on the mat.
 
 Here the regex the at in fat and all preceding characters. It need to match `The f` to get to the `at`.
+
+## Visualization tool
+https://blog.robertelder.org/regular-expression-visualizer/
