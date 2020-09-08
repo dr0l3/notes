@@ -7,3 +7,7 @@ tags: linux, script
 # Strip html from file
 
 `cat steam_description_data.csv | awk 'BEGIN {FS = ","} { gsub(/<[^>]*>/,""); print}' > steam_description_data2.csv`
+
+# find services listening on port
+
+`sudo lsof -i -P -n | grep LISTEN`
