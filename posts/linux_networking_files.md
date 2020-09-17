@@ -12,4 +12,4 @@ Contains the DNS nameserver definitions.
 
 ## `/etc/network/interfaces`
 
-Contains the networking interfaces controlled by the networking manager
+Contains the networking interfaces controlled by the networking manager.
