@@ -18,3 +18,7 @@ tags: database, future
 
 - GraphQL with functions
 - Global
+
+# Dgraph
+
+- GraphQL Schema -> Database
