@@ -57,3 +57,29 @@ Something like the following algorithm would then be nice
 
 1) rank by edit-distance
 2) expand the match x lines/characters up and down
+
+
+## Problems with tre-agrep
+
+It seems tre-agrep doesn't really work when you get to large amounts of matches.
+For some reason it just seems to miss things.
+The above idea no longer makes sense.
+
+## Compile to regular regex
+
+It turns out that compiling so a somewhat fuzzy regex is possible.
+Once a suitably fuzzy regex is achieved its possible to send two commands 
+- One for the contents
+- One for the file list
+
+These two outputs can then be merged together thanks to greps -z flag.
+
+This gives a reasonably fuzzy search that can color matches and list files and lines numbers.
+
+Unfortunately it has several shortcomings including
+- No sorting of matches
+- Fuzziness is quite low quality
+- Can only match on sentences on the same line
+- No support for synonyms
+
+To fix those problems it seems we need an index and preprocessing.

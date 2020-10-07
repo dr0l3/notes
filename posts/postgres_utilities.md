@@ -11,3 +11,9 @@ Instant graphql API with great support for customization.
 # Forest admin
 
 Instant admin panel on your data.
+
+# eSQLate
+
+Easy MVP admin interfaces.
+
+https://github.com/forbesmyester/esqlate
