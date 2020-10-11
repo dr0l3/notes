@@ -22,3 +22,6 @@ tags: database, future
 # Dgraph
 
 - GraphQL Schema -> Database
+
+# Materialize
+- Streaming database
