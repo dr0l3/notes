@@ -1,0 +1,3 @@
+cat movies.json| jq -c ".[]" | parallel -I% --max-args 1 curl "http://localhost:8108/collections/movies/documents" -X POST -H "Content-Type: application/json" -H "X-TYPESENSE-API-KEY: demo"  -d %
+
+curl "http://localhost:8108/collections/movies/documents" -X POST -H "Content-Type: application/json" -H "X-TYPESENSE-API-KEY: demo"  -d '{"id":"287947","title":"Shazam!","poster":"https://image.tmdb.org/t/p/w1280/xnopI5Xtky18MPhK40cZAGAOVeV.jpg","overview":"A boy is given the ability to become an adult superhero in times of need with a single magic word.","release_date":1553299200,"genres":["Action","Comedy","Fantasy"]}'
